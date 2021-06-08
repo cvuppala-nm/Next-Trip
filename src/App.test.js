@@ -3,7 +3,6 @@ import axios from 'axios';
 import { BrowserRouter } from 'react-router-dom'
 import App from './App';
 import '@testing-library/jest-dom/extend-expect'
-import Departures from './Pages/Departures';
 
 axios.CancelToken = { source: () => ({ cancel: jest.fn(), }), };
 jest.mock('axios');
@@ -59,14 +58,14 @@ const stops = mockResponseData([
 
 const departures = mockResponseData([
   {
-    Route: '',
-    Description: '',
-    DepartureText: '',
+    Route: '96',
+    Description: 'Airport Shuttle',
+    DepartureText: '11:26',
   },
   {
-    Route: '',
-    Description: '',
-    DepartureText: '',
+    Route: '96',
+    Description: 'Airport Shuttle',
+    DepartureText: '12:01',
   },
 ])
 
